@@ -1,3 +1,5 @@
+alert("CLICK ON ANY BANNER IMAGE");
+
 document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('.slide');
     const pagination = document.querySelector('.slider-pagination');
