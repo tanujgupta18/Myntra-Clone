@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: #ffffff;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0px solid #b6b1b1;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.myntra_home {
+    height: 45px;
+}
+
+.logo_container {
+    margin-left: 4%;
+}
+
+.nav_bar {
+    display: flex;
+    min-width: 500px;
+    justify-content: space-evenly;
+}
+
+.nav_bar a {
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 28px 0;
+    border-bottom: 4px solid #ffffff
+}
+
+.nav_bar a:hover {
+    border-bottom: 4px solid #f54e77;
+}
+
+.nav_bar a sup {
+    color: #ff3f6c;
+    font-size: 10px;
+}
+
+.search_bar {
+    height: 40px;
+    min-width: 200px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin: 0 2%;
+}
+
+.search_icon {
+    box-sizing: content-box;
+    height: 20px;
+    padding: 10px;
+    background-color: #f5f5f6;
+    color: #282c3f;
+    font-weight: 300;
+    border-radius: 4px 0 0 4px;
+}
+
+.search_input{
+    background-color: #f5f5f6;
+    color: #696e79;
+    flex-grow: 1;
+    height: 40px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+}
+
+.search_input:focus{
+    background-color: #f5f5f6;
+}
+
+.action_bar {
+    margin-top: 15px;
+    margin-right: 2%;
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.action_bar .a.action_container:link {}
+
+.bag-item-count {
+    background-color: #f16565;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 6px;
+    height: 18px;
+    position: relative;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    left: 13px;
+    top: -44px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Main Section */
+
+.slider-container {
+    position: relative;
+}
+
+.slider {
+    margin-top: 40px;
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+    float: left;
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.slider-pagination {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider-pagination span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #aaa;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slider-pagination span.active {
+    background-color: #333;
+}
+
+
+.deals .deals_heading {
+    padding: 10px 30px;
+    margin: 20px 15px;
+    color: #3e4152;
+    font-size: 28px;
+    width: fit-content;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.deals .deals_category .deals_items {
+    width: 206px;
+    height: auto;
+}
+
+.category_heading .heading{
+    padding: 10px 30px;
+    margin: 20px 15px;
+    color: #3e4152;
+    font-size: 28px;
+    width: fit-content;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.category_items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sale_item {
+    width: 210px;
+    flex: 1 1 0%;
+}
+
+.sale_item2 {
+    width: 252px;
+    flex: 1 1 0%;
+    margin-bottom: 30px;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 40px 8%;
+}
+
+.item-container {
+    margin: 10px;
+    box-sizing: border-box;
+    width: 250px;
+}
+
+.item-image {
+    width: 100%;
+}
+
+.rating {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.company-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item-name {
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+}
+
+.price {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #282c3f;
+    white-space: nowrap;
+
+}
+
+.current-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #7e818c;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.discount {
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.btn-add-bag {
+    margin-top: 12px;
+    font-size: 18px;
+    width: 100%;
+    background-color: lightgreen;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+/* Footer Section */
+.footer {
+    position: relative;
+    z-index: 5;
+    padding: 30px 0 40px 0;
+    background: #FAFBFC;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.footer_container {
+    max-width: 1080px;
+    margin: auto;
+    min-width: 980px;
+}
+
+/* Coloum 1 Start*/
+
+.desktop-shopLinks {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+    width: 155px;
+    float: left;
+}
+
+.desktop-shopLinks>p {
+    font-weight: 700;
+}
+
+.desktop-shopLinks a {
+    text-decoration: none;
+    color: #282c3f;
+    background-color: transparent;
+}
+
+.desktop-gInfoTitle,
+.desktop-or {
+    font-size: 12px;
+}
+
+.desktop-customerPolicies>a:nth-child(2),
+.desktop-shopLinks>a:nth-child(10),
+.desktop-shopLinks>a:nth-child(2) {
+    padding-top: 14px;
+}
+
+.desktop-shopLinks>p:nth-child(9) {
+    margin-top: 19px;
+}
+
+.desktop-customerPolicies>a,
+.desktop-shopLinks>a {
+    color: #696b79;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    padding-bottom: 5px;
+    cursor: pointer;
+    line-height: normal;
+}
+
+/* Coloum 1 Ends*/
+
+/* Coloum 2 Starts*/
+.desktop-customerPolicies {
+    width: 15%;
+    float: left;
+}
+
+.desktop-customerPolicies>p {
+    font-weight: 700;
+}
+
+.desktop-gInfoTitle,
+.desktop-or {
+    font-size: 12px;
+}
+
+/* Coloum 2 Ends*/
+
+/* Coloum 3 Start*/
+.desktop-appExperience {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 20px;
+    width: 360px;
+    font-size: 15px;
+    line-height: 19px;
+    float: left;
+    padding-top: 13px;
+}
+
+.desktop-appExperience>p:first-child {
+    font-weight: 700;
+    color: #282c3f;
+    margin: -3px 0 0;
+    padding: 0 0 25px;
+    font-size: 12px;
+
+}
+
+.desktop-appExperience .down_link_container {
+    display: inline-block;
+}
+
+.desktop-appExperience .down_link_container a {
+    text-decoration: none;
+    color: #282c3f
+}
+
+.desktop-appExperience .down_link_container .androidDownlink,
+.desktop-appExperience .down_link_container .iosDownlink {
+    margin-right: 10px;
+    height: 42px;
+    border-style: none;
+}
+
+.desktop-appExperience .keep_in_touch {
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.desktop-appExperience .facebook_icon,
+.desktop-appExperience .twitter_icon,
+.desktop-appExperience .youtube_icon,
+.desktop-appExperience .instagram_icon {
+    margin: 0 15px 0 0;
+    display: inline-block;
+}
+
+.desktop-appExperience .facebook_icon img {
+    width: 20px;
+    height: 21px;
+}
+
+.desktop-appExperience .twitter_icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.desktop-appExperience .youtube_icon img {
+    width: 28px;
+    height: 20px;
+}
+
+.desktop-appExperience .instagram_icon img {
+    width: 20px;
+    height: 22px;
+    position: relative;
+    top: 1px;
+}
+
+/* Column 3 Ends */
+
+/* Column 4 Starts */
+.desktop-promises {
+    width: 250px;
+    float: left;
+}
+
+.desktop-section {
+    margin: 15px 0 30px;
+    color: #696b79;
+}
+
+.desktop-delivery,
+.desktop-original,
+.desktop-return {
+    display: inline-block;
+    float: left;
+    margin-left: -10px;
+    margin-right: 10px;
+    width: 47.5px;
+    height: 40px;
+}
+
+strong {
+    color: #282c3f;
+    font-weight: 700;
+}
+
+/* Column 4 Ends */
+
+.desktop-fInfoSection {
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.desktop-contact {
+    flex: 1;
+    color: #696b79;
+}
+
+.desktop-contact>a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #526cd0;
+}
+
+.desktop-copywrite {
+    flex: 1;
+    color: #94969f;
+    margin-left: 100px;
+}
+
+.desktop-flipkartCompany {
+    -webkit-box-flex: 1;
+    flex: 1;
+    text-align: end;
+}
+
+.desktop-flipkartCompany>a {
+    color: #94969f;
+}
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        width: 128vw;
+        height: 60px; /* Adjust header height for smaller screens */
+    }
+
+    .myntra_home {
+        height: 35px; /* Adjust logo height for smaller screens */
+    }
+
+    .nav_bar {
+        min-width: unset; /* Remove minimum width for navigation bar */
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center; /* Center align navigation items */
+    }
+
+    .search_bar {
+        width: 90%; /* Adjust search bar width for smaller screens */
+    }
+
+    .action_bar {
+        margin-top: 10px; /* Adjust margin top for action bar */
+    }
+
+    .desktop-shopLinks {
+        width: 100%; /* Adjust column width for smaller screens */
+        padding-right: 0; /* Remove padding for smaller screens */
+    }
+
+    .desktop-customerPolicies {
+        width: 100%; /* Adjust column width for smaller screens */
+        padding-right: 0; /* Remove padding for smaller screens */
+    }
+
+    .desktop-appExperience {
+        width: 100%; /* Adjust column width for smaller screens */
+        padding-right: 0; /* Remove padding for smaller screens */
+    }
+
+    .desktop-promises {
+        width: 100%; /* Adjust column width for smaller screens */
+        padding-right: 0; /* Remove padding for smaller screens */
+    }
+
+}
