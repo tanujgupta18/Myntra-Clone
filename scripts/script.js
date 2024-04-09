@@ -1,10 +1,7 @@
-// alert("CLICK ON ANY BANNER IMAGE");
-
 document.addEventListener('DOMContentLoaded', function () {
     const slides = document.querySelectorAll('.slide');
     const pagination = document.querySelector('.slider-pagination');
 
-    // Create pagination bullets dynamically
     slides.forEach((slide, index) => {
         const bullet = document.createElement('span');
         bullet.classList.add('bullet');
@@ -30,15 +27,15 @@ document.addEventListener('DOMContentLoaded', function () {
     // Autoplay functionality
     function autoplay() {
         if (currentSlide === 0) {
-            goToSlide((currentSlide + 1) % slides.length); // Change after 2 seconds
+            goToSlide((currentSlide + 1) % slides.length);
             setTimeout(autoplay, 2000);
         } else {
-            goToSlide((currentSlide + 1) % slides.length); // Change after 4 seconds
+            goToSlide((currentSlide + 1) % slides.length);
             setTimeout(autoplay, 2500);
         }
     }
 
-    autoplay(); // Start autoplay
+    autoplay();
 });
 
 
@@ -80,7 +77,7 @@ function displayItemsOnHomePage() {
     <div class="item-container">
         <img class = "item-image" src="${items.image}" alt="item image">
         <div class="rating">
-            ${items.rating.stars} ⭐ | ${items.rating.count}
+            ${items.rating.stars} ⭐ | ${formatRatingCount(items.rating.count)} reviews <!-- Apply formatting here -->
         </div>
         <div class="company-name">${items.company}</div>
         <div class="item-name">${items.item_name}</div>
@@ -89,9 +86,17 @@ function displayItemsOnHomePage() {
             <span class="original-price">Rs ${items.original_price}</span>
             <span class="discount">(${items.discount_percentage}% OFF)</span>
         </div>
-        <button class="btn-add-bag" onclick = "addToBag(${items.id})">Add to Bag</button>
+        <button class="btn-add-bag" onclick="addToBag(${items.id})">Add to Bag</button>
     </div>`
     });
 
     itemsContainerElement.innerHTML = innerHtml;
+}
+
+function formatRatingCount(count) {
+    if (count >= 1000) {
+        return (count / 1000).toFixed(1) + 'k';
+    } else {
+        return count;
+    }
 }
