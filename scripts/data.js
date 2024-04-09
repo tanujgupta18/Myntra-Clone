@@ -1,3 +1,4 @@
+  
 const items = [
     {
         id: '001',
@@ -117,6 +118,66 @@ const items = [
         rating: {
             stars: 4.2,
             count: 5200,
+        },
+    },
+    {
+        id: '009',
+        image: 'images/images/9.jpg',
+        company: 'Roadster',
+        item_name: 'Baggy Fit Parachute Trousers',
+        original_price: 2299,
+        current_price: 804,
+        discount_percentage: 65,
+        return_period: 14,
+        delivery_date: '23 Jan 2024',
+        rating: {
+            stars: 4.0,
+            count: 157,
+        },
+    },
+    {
+        id: '010',
+        image: 'images/images/10.jpg',
+        company: 'BULLMER',
+        item_name: 'Tribal Printed Oversized Cotton T-shirt',
+        original_price: 1499,
+        current_price: 389,
+        discount_percentage: 74,
+        return_period: 14,
+        delivery_date: '23 Jan 2024',
+        rating: {
+            stars: 3.7,
+            count: 470,
+        },
+    },
+    {
+        id: '011',
+        image: 'images/images/11.jpg',
+        company: 'Red Tape',
+        item_name: 'Men Colourblocked Lace-Ups Sneakers',
+        original_price: 5599,
+        current_price: 1119,
+        discount_percentage: 80,
+        return_period: 14,
+        delivery_date: '23 Jan 2024',
+        rating: {
+            stars: 4.3,
+            count: 1200,
+        },
+    },
+    {
+        id: '012',
+        image: 'images/images/12.jpg',
+        company: 'Sangria',
+        item_name: 'Black Sequinned Embellished Saree',
+        original_price: 5049,
+        current_price: 1259,
+        discount_percentage: 75,
+        return_period: 30,
+        delivery_date: '23 Jan 2024',
+        rating: {
+            stars: 4.9,
+            count: 500,
         },
     }
 ];
